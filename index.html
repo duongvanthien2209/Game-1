@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .buttons {
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+
+        button {
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        #up {
+            position: absolute;
+            top: 0;
+            left: 50px;
+        }
+        #down {
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+        }
+        #left {
+            position: absolute;
+            left: 0;
+            top: 60px;
+        }
+        #right {
+            position: absolute;
+            right: 0;
+            top: 60px;
+        }
+    </style>
+    <title>My Game</title>
+</head>
+
+<body>
+    <div class="buttons" id="buttons">
+        <button data-x="0" data-y="-1" id="up">UP</button>
+        <button data-x="0" data-y="1" id="down">DOWN</button>
+        <button data-x="-1" data-y="0" id="left">LEFT</button>
+        <button data-x="1" data-y="0" id="right">RIGHT</button>
+    </div>
+    <button id="pause">Pause</button>
+    <script src="myGame.js"></script>
+</body>
+
+</html>
